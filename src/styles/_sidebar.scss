@@ -1,0 +1,42 @@
+@import './colors';
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 15%;
+    left: 5px;
+    z-index: 20;
+
+    .line {
+        height: 70vh;
+        width:  0.5px;      
+        display: block;
+        background: $orange;
+        margin-left: 15px;
+    }
+    button {
+        background: transparent;
+        border: 1px solid $main-dark-blue;
+        border-radius: 15px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        padding: 7px 7px;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid $orange;
+        }
+    }
+    svg {
+        color: white;
+        width: 15px;
+    }
+}
+@media (min-width: 576px) {
+    .sidebar {
+        display: flex;
+    }
+}

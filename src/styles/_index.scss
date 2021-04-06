@@ -1,2 +1,17 @@
-@import "./colors";
+@import "./colors", "./sidebar", "./nav";
 
+body {
+    background: $main-dark-blue;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+    // change to sans-serif before deployment
+}
+a, li{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
