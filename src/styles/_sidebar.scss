@@ -1,31 +1,23 @@
 @import './colors';
 
-.sidebar {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    bottom: 15%;
-    left: 5px;
-    z-index: 20;
+.sidebar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2%;
 
-    .line {
-        height: 70vh;
-        width:  0.5px;      
-        display: block;
-        background: $orange;
-        margin-left: 15px;
-    }
     button {
         background: transparent;
         border: 1px solid $main-dark-blue;
         border-radius: 15px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         outline: none;
         padding: 7px 7px;
         cursor: pointer;
+        margin: 0 3%;
         &:hover {
             border: 1px solid $orange;
         }
@@ -34,9 +26,27 @@
         color: white;
         width: 15px;
     }
+
 }
 @media (min-width: 576px) {
     .sidebar {
-        display: flex;
-    }
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        bottom: 15%;
+        left: 1%;
+        z-index: 20;
+        width: min-content;
+    
+        .line {
+            height: 70vh;
+            width:  0.5px;      
+            display: block;
+            background: $orange;
+            margin-left: 15px;
+        }
+        button {
+            margin-top: 10px;           
+        }      
+    } 
 }

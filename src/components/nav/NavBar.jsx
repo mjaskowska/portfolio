@@ -20,6 +20,15 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
                 <img src={Hamburger} alt="Menu" />
               )}
             </button>
+            <section className="menu">
+                <ul className="menu-links">
+                    <li><span>01. </span>About</li>
+                    <li><span>02. </span>Skills</li>
+                    <li><span>03. </span>Experience & Projects</li>
+                    <li><span>04. </span>Contact</li>
+                </ul>
+                <a className="cv-btn" href="/">CV</a>
+            </section>
         </header>
         <SlideMenu {...{isMenuOpen}}/>
         </>

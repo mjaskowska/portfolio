@@ -9,7 +9,7 @@ const SlideMenu = ({isMenuOpen}) => {
                 <li><span>03. </span>Experience & Projects</li>
                 <li><span>04. </span>Contact</li>
             </ul>
-            <a href="/">CV</a>
+            <a className="cv-btn" href="/">CV</a>
         </div>
     )
 }

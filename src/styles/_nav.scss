@@ -3,22 +3,59 @@
 .navbar {
     .hamburger {       
         position: absolute;
-        top: 20px;
-        right: 20px; 
+        top: 30px;
+        right: 5%; 
         border: none;
         background-color: transparent;
         outline: none;
         cursor: pointer;
-        z-index: 25;
-       
+        z-index: 25;       
         img {
             width: 30px;
         }        
-    }  
+    }
+    .menu {
+        margin-top: 20px;
+        width: 95%;
+        display: none;
+        .menu-links {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $main-light-blue;
+            li {
+                margin: 0 5px;
+                padding: 0 5px;
+                border: 1px solid transparent;
+                &:hover {
+                    border-bottom: 1px solid $orange;
+                }
+            }
+            span {
+                color: $orange;
+                font-size: 13px;
+            }
+        }
+        .cv-btn {
+            color: $orange;
+            border: 1px solid $orange;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-left: 10px;
+            &:hover {
+                background: $orange;
+                color: $main-light-blue;
+            }
+        }
+
+    } 
+
 }
 .slide-menu {
     color: $main-light-blue;
     height: 100vh;
+    min-width: 220px;
     width: 75%;
     max-width: 300px;
     background: $main-medium-blue;
@@ -31,6 +68,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 21;
 
     .menu-links {
         height: 50%;
@@ -42,9 +80,40 @@
             color: $orange;
             font-size: 13px;
         }
+        li {
+            border: 1px solid $main-medium-blue;
+        }
+        li:hover {
+            border-bottom: 1px solid $orange;
+        }
+    }
+    .cv-btn {
+        color: $orange;
+        border: 1px solid $orange;
+        padding: 15px 40px;
+        border-radius: 10px;
+        &:hover {
+            background: $orange;
+            color: $main-light-blue;
+        }
     }
 }
 div.slide-menu.open {
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 576px) {    
+    .slide-menu {
+        display: none;
+    }
+    .navbar {
+        .menu {
+            display: flex;
+        }
+        .hamburger {
+            display: none;
+        }
+    }
+    
 }
