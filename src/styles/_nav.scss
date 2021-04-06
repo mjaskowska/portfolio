@@ -1,6 +1,10 @@
 @import './colors';
 
 .navbar {
+    position: sticky;
+    top: 0;
+    border: 1px solid transparent;
+    background: $main-dark-blue;
     .hamburger {       
         position: absolute;
         top: 30px;
@@ -16,6 +20,7 @@
     }
     .menu {
         margin-top: 20px;
+        margin-bottom: 10px;
         width: 95%;
         display: none;
         .menu-links {
@@ -103,7 +108,7 @@ div.slide-menu.open {
     transition: all 0.5s ease-in-out;
 }
 
-@media (min-width: 576px) {    
+@media (min-width: 600px) {    
     .slide-menu {
         display: none;
     }

@@ -1,0 +1,32 @@
+@import './colors';
+
+.hero {
+    width: 85%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30vh;
+    
+    p {
+        color: #49526C;
+        font-size: 1.5rem;
+    }
+    h1 {
+        color: $orange;
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    .orange-btn {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 600px) {
+    .hero {
+        height: 65vh;
+        margin-top: 10vh;
+    }
+   
+}

@@ -7,9 +7,8 @@ const Hero = () => {
             <p>Hello, I'm</p>
             <h1>Magda Jaskowska</h1>
             <p>I'm a Self-Taught Front-end Developer, fascinated by the web.</p>
-            <button>Contact me</button>            
+            <button className="orange-btn">Contact me</button>            
         </section>
-        <section className=""></section>
         </>
     )
 }

@@ -1,0 +1,56 @@
+@import "./colors";
+
+.about {
+    margin: 200px 0;
+
+    .pic {        
+        width: 180px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 90px;
+        background: $main-light-blue;
+        border-radius: 10px;
+        position: relative;
+        height: 200px;
+        img {
+           width: 100%;   
+            position: absolute;
+            bottom: 0;
+        }
+        &::before, &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;            
+            border: 1px solid $main-light-blue;
+            border-radius: 10px;
+            
+        }
+        &::before {
+            top: -15px;
+            left: -30px;
+            height: 190px;
+            width: 190px;
+        }
+        &::after {
+            bottom: -30px;
+            left: -15px;
+            height: 70px;
+            width: 70px;
+            z-index: -1;
+        }
+    }
+    .description {        
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+        line-height: 30px;
+        p {
+            margin-top: 20px;
+        }
+        span{
+            color: $orange;
+        }
+
+    }
+}
