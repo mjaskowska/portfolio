@@ -3,4 +3,16 @@
 .projects {
     margin-top: 100px;
     margin-bottom: 100px;
+
+    .orange-btn {
+        color: $main-light-blue;
+        border: 1px solid $main-light-blue;
+        display: block;
+        margin: 0 auto;
+        min-width: 200px;
+        padding: 18px;
+        &:hover {
+            border: 1px solid $orange;
+        }
+    }
 }

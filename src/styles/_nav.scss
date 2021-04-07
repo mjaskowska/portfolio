@@ -5,6 +5,7 @@
     top: 0;
     border: 1px solid transparent;
     background: $main-dark-blue;
+    z-index: 25;
     .hamburger {       
         position: absolute;
         top: 30px;
@@ -20,7 +21,6 @@
     }
     .menu {
         margin-top: 20px;
-        margin-bottom: 10px;
         width: 95%;
         display: none;
         .menu-links {

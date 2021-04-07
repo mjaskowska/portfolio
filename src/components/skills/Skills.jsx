@@ -5,16 +5,21 @@ const Skills = () => {
         <div className="skills">
             <h3 className="subtitle"><span>02.</span> Skills</h3>
             <p>Here are a few technologies I've been working with recently:</p>
-            <section className="skill-list">
-                <div className="skill">HTML</div>
-                <div className="skill">HTML</div>
-                <div className="skill">HTML</div>
-                <div className="skill">HTML</div>
-                <div className="skill">HTML</div>
-                <div className="skill">HTML</div>
-                <div className="skill">HTML</div>
-                <div className="skill">HTML</div>
-            </section>
+            <ul className="skill-list">
+                <li className="skill">HTML</li>
+                <li className="skill">CSS</li>
+                <li className="skill">SASS</li>
+                <li className="skill">JavaScript</li>
+                <li className="skill">React</li>
+                <li className="skill">Redux</li>
+                <li className="skill">React Bootstrap</li>
+                <li className="skill">Formik</li>
+                <li className="skill">Webpack</li>
+                <li className="skill">GSAP</li>
+                <li className="skill">Git/ Github</li>
+                <li className="skill">Figma</li>
+                <li className="skill">Adobe Photoshop</li>
+            </ul>
         </div>
     )
 }

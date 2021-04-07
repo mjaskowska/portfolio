@@ -8,6 +8,10 @@
     padding: 12px 20px;
     font-size: 1rem;
     max-width: 150px;
+    &:hover {
+        color: white;
+        background: $orange;
+    }
 }
 
 .subtitle {

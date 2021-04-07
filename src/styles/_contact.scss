@@ -1,0 +1,77 @@
+@import "./colors";
+
+.contact {
+    display: block;
+    margin: 100px auto 100px;
+    .social-container {
+        margin: auto {
+            left: 50%;
+            top: 100px;
+        };
+        transform: translateX(-50%);
+        width: max-content;
+        .social {
+            display: flex;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+            p{ 
+                margin-left: 30px;
+            }
+        }
+    }
+    .emailJS {      
+        width: 90%;
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 130px;
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+
+        .form-label {
+            font-size: 0.75rem;           
+            pointer-events: none;
+            position: absolute;
+            bottom: 4px;
+            left: 1%;
+            transition: all 0.3s ease-in-out;
+
+        }
+        .form-control {
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $orange;
+            width: 100%;
+            &:focus {
+                border-bottom: 2px solid $main-medium-blue;
+            }
+        }
+        textarea {
+            margin-top: 20px;
+        }
+        .form-control[type=text], .form-control[type=email] {
+            height: 40px;
+            padding-top: 15px;
+        }
+        
+        input:focus + .form-label, input:valid + .form-label {
+            bottom: 30px;
+            font-size: 0.6rem;
+            transition: all 0.3s ease-in-out;
+        }
+        textarea:focus + .form-label, textarea:valid + .form-label {
+            bottom: 90px;
+            font-size: 0.6rem;
+        }
+
+        }
+        .orange-btn {
+            display: block;
+            margin: 40px auto;
+        }
+        
+    }
+    
+}

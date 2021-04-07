@@ -15,10 +15,10 @@
         width: 90%;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 75px);
+        grid-template-columns: repeat(auto-fit, 78px);
         grid-template-rows: 75px;
         grid-auto-rows: 75px;
-        grid-gap: 10px;
+        grid-gap: 7px;
         justify-content: center;
         align-items: center;
         .skill {
@@ -30,7 +30,11 @@
             justify-content: center;
             align-items: center;
             font-size: 0.95rem;
-
+            text-align: center;
+            &:hover {
+                color: $orange;
+                border: 1px solid $orange;
+            }
         }
     }
 }
