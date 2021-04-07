@@ -8,6 +8,8 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
+
+  
   return (
     <div className="contact">
       <h3 className="subtitle">

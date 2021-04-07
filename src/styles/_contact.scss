@@ -29,16 +29,10 @@
             position: relative;
             margin-bottom: 20px;
 
-        .form-label {
+        label {
             font-size: 0.75rem;           
-            pointer-events: none;
-            position: absolute;
-            bottom: 4px;
-            left: 1%;
-            transition: all 0.3s ease-in-out;
-
         }
-        .form-control {
+        input, textarea {
             background: transparent;
             border: none;
             outline: none;
@@ -46,27 +40,23 @@
             width: 100%;
             &:focus {
                 border-bottom: 2px solid $main-medium-blue;
+                background: transparent;
             }
         }
         textarea {
             margin-top: 20px;
+            min-height: 80px;
         }
-        .form-control[type=text], .form-control[type=email] {
+     
+        input[type=text], input[type=email] {
             width: 90%;
             height: 40px;
-            padding-top: 15px;
         }
-        
-        input:focus + .form-label, input:valid + .form-label {
-            bottom: 30px;
-            font-size: 0.6rem;
-            transition: all 0.3s ease-in-out;
+        .validation-error {
+            font-size: 0.7rem;
+            color: red;
         }
-        textarea:focus + .form-label, textarea:valid + .form-label {
-            bottom: 90px;
-            font-size: 0.6rem;
-        }
-
+    
         }
         .orange-btn {
             display: block;
