@@ -3,6 +3,7 @@
 .projects {
     margin-top: 150px;
     .experience, .personal-projects{
+        max-width: 1300px;
         width: 90%;
         margin: 0 auto;
         .mid-title {            
@@ -99,11 +100,42 @@
         color: $main-light-blue;
         border: 1px solid $main-light-blue;
         display: block;
-        margin: 0 auto;
+        margin: 50px auto;
         min-width: 200px;
         padding: 18px;
         &:hover {
             border: 1px solid $orange;
+        }
+    }
+}
+@media (min-width: 600px) {
+    .projects {
+        .experience, .personal-projects {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+    
+}
+@media (min-width: 950px) {
+    .projects {
+        .personal-projects {
+            margin-top: 90px;
+        }
+        .experience, .personal-projects {
+            max-width: 1200px;
+            .project-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .project-img {
+                    width: 40%;
+                }
+                .project-info {
+                    width: 65%;
+                    padding: 0 20px;
+                }
+            }
         }
     }
 }
