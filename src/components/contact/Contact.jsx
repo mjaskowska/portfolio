@@ -15,6 +15,7 @@ const Contact = () => {
       <h3 className="subtitle">
         <span>04.</span> Contact me
       </h3>
+    
       <section className="social-container">
         <div className="social">
           <RiGithubLine />
@@ -34,6 +35,8 @@ const Contact = () => {
         </div>
       </section>
       <EmailForm />
+      
+      
     
     </div>
   );

@@ -6,6 +6,7 @@
     border: 1px solid transparent;
     background: $main-dark-blue;
     z-index: 25;
+    transition: all 0.3s ease-in-out;
     .hamburger {       
         position: absolute;
         top: 30px;
