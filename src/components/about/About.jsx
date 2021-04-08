@@ -10,7 +10,7 @@ const About = () => {
             <img src={Magda} alt="magda" />
             </div>
             <div className="description">
-                <p>I am an inventive and self-starting <span>Frontend Developer</span> with passion for responsive web design, animations and a firm believer in the <span>mobile-first approach</span>. I've learnt to google, understand documentations and read endless amount of error messages. I have the drive and energy required to make a difference in any project.</p>
+                <p>I am an inventive and self-starting <span>Frontend Developer</span> with passion for responsive web design, animations and a firm believer in the mobile-first approach. I've learnt to google, understand documentations and read endless amount of error messages. I have the drive and energy required to make a difference in any project.</p>
                 
                 <p>I believe <span>learning-by-doing</span> is the most effective way of mastering new skills so I participate in <span>Open Source projects</span> and always have a side-project in progress. </p>
 

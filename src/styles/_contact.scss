@@ -63,6 +63,15 @@
             margin: 40px auto;
         }
         
+        
+    }
+    .response {
+        display: block;
+        margin: 0 auto;
+        text-align: center;               
+        .error {
+            color: red;
+        }
     }
     
 }

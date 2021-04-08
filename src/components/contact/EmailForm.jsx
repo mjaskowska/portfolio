@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Formik } from "formik";
+import { Formik, Form } from "formik";
 import { contactFormValidationSchema } from "./validation";
 
 import { useHelper } from "./helper";
@@ -11,30 +11,32 @@ import { FORMIK_CONSTANTS } from "./constants";
 const EmailForm = () => {
 
   const {
-    sendEmail,
+    sendEmail, error, response
   } = useHelper()
 
   return (
     <Formik
       {...{
-        initialValues: { email: "", message: "" },
+        initialValues: {name: "", email: "", message: "" },
         validateOnChange: true,
         validateOnMount: false,
-        // validationSchema: contactFormValidationSchema,
-        onSubmit: (values) => {
+        validationSchema: contactFormValidationSchema,
+        onSubmit: (values, {resetForm}) => {
           sendEmail(values);
+          resetForm({values: ""})
         },
 
       }}
     >
-      {({ values, errors, isValid, touched, handleSubmit, handleChange }) => (
-        <section className="emailJS">
+      {({ values, errors, isValid, handleSubmit, handleChange }) => (
+        <Form className="emailJS" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">YOUR NAME / COMPANY</label>
             <input
               autoComplete="off"
               id="name"
               type="text"
+              required
               value={values[FORMIK_CONSTANTS.NAME]}
               onChange={handleChange}
             />
@@ -68,15 +70,18 @@ const EmailForm = () => {
               <p className="validation-error">{errors[FORMIK_CONSTANTS.MESSAGE]}</p>
             )}
           </div>
+          <div className="response">
+            {error && <p className="error">{error}</p>}
+            {response && <p>{response}</p>}
+          </div>
           <button
-            onClick={handleSubmit}
             className="orange-btn"
             type="submit"
             disabled={!isValid}
           >
             SEND
           </button>
-        </section>
+        </Form>
       )}
     </Formik>
   );
