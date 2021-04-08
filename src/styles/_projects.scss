@@ -1,8 +1,99 @@
 @import './colors';
 
 .projects {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    .experience, .personal-projects{
+        width: 90%;
+        margin: 0 auto;
+        .mid-title {            
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+        .company-name {
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            span {
+                font-size: 0.8rem;
+                font-weight: normal;
+            }
+        }
+        .job-description {            
+            margin-bottom: 30px;
+            line-height: 25px;
+        }
+        .project-title {
+            font-size: 1.25rem;
+            color: $orange;
+            margin-bottom: 30px;
+        }
+        .project-container {
+            .project-img {
+                max-width: 400px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                position: relative;                
+
+                img {
+                    width: 100%;
+                    transition: all 0.5s ease-in-out;
+                    backface-visibility: hidden;
+                    border-radius: 10px;
+                }
+                .links-container {
+                    display: none;
+                    transition: all 0.5s ease-in-out;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    a {
+                        border: 1px solid white;
+                        padding: 15px;
+                        border-radius: 10px;
+                        margin: 15px;
+                        width: 60px;
+                        &:hover {
+                            background: $main-dark-blue;
+                        }
+                        svg {
+                            margin: 0 auto;
+                            display: block;
+                            transform: scale(1.7)
+                        }
+                    }
+                }
+                &:hover {
+                    background: $main-medium-blue;
+                }
+                &:hover > img {
+                    opacity: 0.3;
+                }
+                &:hover > .links-container {
+                   display: flex;
+                }
+
+            }
+            .project-info {
+                margin-bottom: 50px;
+
+                .project-tech {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 10px;
+                    
+                    li {
+                        margin: 10px;
+                        font-family: "Fira Code" ;
+                        color: $orange;
+                    }
+
+                }
+            }
+        }
+    }
+
+
 
     .orange-btn {
         color: $main-light-blue;
