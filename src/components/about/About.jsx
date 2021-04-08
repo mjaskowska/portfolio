@@ -6,6 +6,7 @@ const About = () => {
     return (
         <div className="about">
             <h3 className="subtitle"><span>01. </span>About me</h3>
+            <div className="wrapper">            
             <div className="pic">
             <img src={Magda} alt="magda" />
             </div>
@@ -19,6 +20,7 @@ const About = () => {
                 <p>One of my reasons I decided to start a Web Developer career is the mix of problem solving and getting to be creative. <span>I am committed, persistent and ready to learn</span>. </p>    
 
                 <p>I am currently seeking a Junior Web Developer position where I will be able to work alongside other talented IT professionals in creating websites meeting the very highest standards.</p>
+            </div>
             </div>
             
         </div>

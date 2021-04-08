@@ -4,16 +4,17 @@
     margin-top: 200px;
 
     .pic {        
-        width: 180px;
+        width: 150px;
         display: block;
         margin: 0 auto;
         margin-top: 90px;
         background: $main-light-blue;
         border-radius: 10px;
         position: relative;
-        height: 200px;
+        height: 170px;
         img {
            width: 100%;   
+           aspect-ratio: 1/1.1;
             position: absolute;
             bottom: 0;
         }
@@ -28,8 +29,8 @@
         &::before {
             top: -15px;
             left: -30px;
-            height: 190px;
-            width: 190px;
+            height: 150px;
+            width: 150px;
         }
         &::after {
             bottom: -30px;
@@ -44,7 +45,8 @@
         display: block;
         margin: 0 auto;
         margin-top: 60px;
-        line-height: 30px;
+        line-height: 30px;        
+        font-size: 0.9rem;
         p {
             margin-top: 20px;
         }
@@ -53,4 +55,43 @@
         }
 
     }
+    
+}
+@media (min-width: 600px) {
+    .about {
+        .wrapper {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+}
+@media (min-width: 800px) {
+    .about {
+        .wrapper {
+            max-width: 1300px;
+            width: 80%;
+            display: flex;
+            .pic{
+                width: 200px;
+                height: 225px;
+
+                &::before {
+                    height: 210px;
+                    width: 210px;
+                }
+            }
+
+            .description {
+                margin-left: 50px;
+                width: 65%;
+                font-size: 1rem;
+            }
+
+
+        }
+    }
+
+}
+@media (min-width: 1200px) {
+    
 }
