@@ -27,6 +27,24 @@
     .hero {
         height: 65vh;
         margin-top: 10vh;
+        justify-content: flex-end;
+        p {
+            font-size: calc(1.5rem + 1.231vw -7.385px);
+        }
+        h1 {
+            font-size: calc(2rem + 1.231vw + -7.385px);
+        }
+    }
+   
+}
+@media (min-width: 1250px) {
+    .hero {
+        p {
+            font-size: calc(1.5rem + 8px);
+        }
+        h1 {
+            font-size: calc(2rem + 8px);
+        }
     }
    
 }
