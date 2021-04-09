@@ -8,7 +8,6 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
-
   
   return (
     <div className="contact" id="04">
@@ -17,14 +16,14 @@ const Contact = () => {
       </h3>
     
       <section className="social-container">
-        <div className="social">
+        <a target="blank" href="https://github.com/mjaskowska" className="social">
           <RiGithubLine />
           <p>github.com/mjaskowska</p>
-        </div>
-        <div className="social">
+        </a>
+        <a target="blank" href="https://www.linkedin.com/in/jaskowskamagda/" className="social">
           <FiLinkedin />
           <p>linkedin.com/in/jaskowskamagda</p>
-        </div>
+        </a>
         <div className="social">
           <FaEnvelope />
           <p>jaskowska.magda@gmail.com</p>
