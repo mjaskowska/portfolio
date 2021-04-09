@@ -1,7 +1,6 @@
 import React from "react";
 import { FaFile, FaFileCode } from "react-icons/fa";
 
-import trulse from "./../../assets/trulse.png";
 import { experience, personalProjects } from "./info";
 
 const Projects = () => {
@@ -12,7 +11,7 @@ const Projects = () => {
       </h3>
       <section className="experience">
         <h4 className="mid-title">Experience:</h4>
-        {experience.map((item) => {
+        {experience.map((item, index) => {
           const {
             companyName,
             timeline,
@@ -25,7 +24,7 @@ const Projects = () => {
             tech,
           } = item;
           return (
-            <>
+            <React.Fragment key={index}>
               <h5 className="company-name">
                 {companyName} <span>{timeline}</span>
               </h5>
@@ -48,17 +47,17 @@ const Projects = () => {
                     <p>{description}</p>
                   </section>
                   <ul className="project-tech">
-                  {tech.map((item) => <li>{item}</li>)}
+                  {tech.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
                 </div>
               </div>
-            </>
+            </React.Fragment>
           );
         })}
       </section>
       <section className="personal-projects">
         <h4 className="mid-title">Personal projects:</h4>
-        {personalProjects.map((item) => {
+        {personalProjects.map((item, index) => {
           const {
             projectTitle,
             imgURL,
@@ -68,7 +67,7 @@ const Projects = () => {
             tech,
           } = item;
           return (
-            <>
+            <React.Fragment key={index}>
               <h5 className="project-title">{projectTitle}</h5>
               <div className="project-container">
                 <div className="project-img">
@@ -88,16 +87,16 @@ const Projects = () => {
                     </p>
                   </section>
                   <ul className="project-tech">
-                      {tech.map((item) => <li>{item}</li>)}
+                      {tech.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
                 </div>
               </div>
-            </>
+            </React.Fragment>
           );
         })}
       </section>
       <button className="orange-btn">
-        <a href="https://github.com/mjaskowska">See more on GitHub</a>
+        <a href="https://github.com/mjaskowska" target="blank">See more on GitHub</a>
       </button>
     </div>
   );

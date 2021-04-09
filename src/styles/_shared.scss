@@ -9,6 +9,8 @@
     font-size: 1rem;
     max-width: 150px;
     outline: none;
+    display: flex;
+    justify-content: center;
     &:hover {
         color: white;
         background: $orange;
