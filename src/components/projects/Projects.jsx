@@ -6,7 +6,7 @@ import { experience, personalProjects } from "./info";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="03">
       <h3 className="subtitle">
         <span>03.</span> Experience & Projects
       </h3>

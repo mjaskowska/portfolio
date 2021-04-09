@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import throttle from "lodash.throttle";
+
+
 
 import SlideMenu from "./SlideMenu";
 
 import CloseBtn from "./../../assets/Close.svg";
 import Hamburger from "./../../assets/Hamburger.svg";
+import CV from './../../assets/MJaskowska - CV.pdf'
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +34,10 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(()=>{
+
+  },[])
+
   return (
     <>
       <header
@@ -51,21 +59,21 @@ const NavBar = () => {
           )}
         </button>
         <section className="menu">
-          <ul className="menu-links">
-            <li>
+          <div className="menu-links">
+            <AnchorLink offset={() => 100}  href="#01" className="menu-link">
               <span>01. </span>About
-            </li>
-            <li>
+            </AnchorLink>
+            <AnchorLink offset={() => 100}  href="#02" className="menu-link">
               <span>02. </span>Skills
-            </li>
-            <li>
+            </AnchorLink>
+            <AnchorLink offset={() => 100}  href="#03" className="menu-link">
               <span>03. </span>Experience & Projects
-            </li>
-            <li>
+            </AnchorLink>
+            <AnchorLink offset={() => 100}  href="#04" className="menu-link">
               <span>04. </span>Contact
-            </li>
-          </ul>
-          <a className="cv-btn" href="/">
+            </AnchorLink>
+          </div>
+          <a className="cv-btn" href={CV} target="blank">
             CV
           </a>
         </section>

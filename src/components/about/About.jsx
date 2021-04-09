@@ -4,7 +4,7 @@ import Magda from './../../assets/magda.png'
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id="01">
             <h3 className="subtitle"><span>01. </span>About me</h3>
             <div className="wrapper">            
             <div className="pic">

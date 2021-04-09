@@ -8,7 +8,7 @@
     bottom: 2%;
     z-index: 20;
 
-    button {
+    .social-icon {
         background: transparent;
         border: 1px solid $main-dark-blue;
         border-radius: 15px;
@@ -18,11 +18,32 @@
         outline: none;
         padding: 7px 7px;
         cursor: pointer;
-        margin: 0 3%;
+        // margin: 0 3%;
+        width: 32px;
         &:hover {
             border: 1px solid $orange;
         }
     }
+    .social-container {
+        position: relative;
+        padding: 7px;
+        
+    }
+    .social-info {
+        position: absolute;
+        width: max-content;
+        top: -50%;
+        right: 0;
+        background-color: $main-dark-blue;
+        padding: 5px;
+        transition: all 0.5s ease-in-out;
+        transform: scaleY(0);
+        transform-origin: 0% 100%;
+        font-size: 0.7rem;
+    }
+    .social-open {            
+        transform: scaleY(1);
+    }   
     svg {
         color: white;
         width: 15px;
@@ -44,10 +65,19 @@
             width:  0.5px;      
             display: block;
             background: $orange;
-            margin-left: 15px;
+            margin-left: 25px;
         }
-        button {
+        .social-icon {
             margin-top: 10px;           
-        }      
+        }   
+        .social-info {
+            left: 50px;
+            top: 40%;
+            padding: 5px;           
+            display: none;
+        }
+        .social-open {            
+            display: inline;
+        }   
     } 
 }

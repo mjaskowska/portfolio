@@ -11,7 +11,7 @@ const Contact = () => {
 
   
   return (
-    <div className="contact">
+    <div className="contact" id="04">
       <h3 className="subtitle">
         <span>04.</span> Contact me
       </h3>
