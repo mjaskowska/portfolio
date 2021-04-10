@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import throttle from "lodash.throttle";
-
-
+import gsap from "gsap"
 
 import SlideMenu from "./SlideMenu";
 
@@ -14,6 +13,7 @@ import CV from './../../assets/MJaskowska - CV.pdf'
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowScrolled, setWindowScrolled] = useState(false);
+
 
   useEffect(() => {
     let prevPosition = window.pageYOffset;
@@ -34,9 +34,16 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(()=>{
+  // useEffect(()=>{
+  //   const [items] = navItems.current.children;
 
-  },[])
+  //   gsap.set(items, {autoAlpha: 0})
+
+  //   const tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
+
+  //   tl.fromTo(items, {y: "-+10"}, {duration: 0.5, autoAlpha: 1, y: "+=10"})
+
+  // },[])
 
   return (
     <>

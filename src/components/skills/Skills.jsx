@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <div className="skills" id="02">
             <h3 className="subtitle"><span>02.</span> Skills</h3>
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Have a look at some of the main technologies I've been using in my projects:</p>
             <ul className="skill-list">
                 <li className="skill">HTML</li>
                 <li className="skill">CSS</li>

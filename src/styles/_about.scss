@@ -27,13 +27,13 @@
             
         }
         &::before {
-            top: -15px;
+            top: 25px;
             left: -30px;
             height: 150px;
             width: 150px;
         }
         &::after {
-            bottom: -30px;
+            bottom: -40px;
             left: -15px;
             height: 70px;
             width: 70px;
@@ -76,8 +76,9 @@
                 height: 225px;
 
                 &::before {
-                    height: 210px;
-                    width: 210px;
+                    top: 105px;
+                    height: 130px;
+                    width: 130px;
                 }
             }
 
