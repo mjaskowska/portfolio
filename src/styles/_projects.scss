@@ -45,12 +45,9 @@
                     transition: all 0.5s ease-in-out;
                     display: flex;
                     position: absolute;
-                    top: 5px;
+                    top: -30px;
                     right: 5px;
                     a {
-                        border: 1px solid white;
-                        padding: 8px;
-                        border-radius: 10px;
                         margin: 2px;
                         &:hover {
                             background: $main-dark-blue;
@@ -66,14 +63,15 @@
             }
             .project-info {
                 margin-bottom: 50px;
+                line-height: 30px;
 
                 .project-tech {
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: flex-end;
                     margin-top: 10px;
-                    
                     li {
-                        margin: 10px;
+                        margin:  5px 10px;
                         font-family: "Fira Code" ;
                         color: $orange;
                     }
