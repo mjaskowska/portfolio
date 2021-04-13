@@ -52,12 +52,12 @@ export const experience = [
         tech: ["JavaScript", "SCSS", "GSAP", "ScrollTrigger",],
       },   
               {
-        projectTitle: "Ecommerce website",
+        projectTitle: "eCommerce",
         imgURL: shop,
         demoURL: "https://mjaskowska.github.io/shop/",
         githubURL: "https://github.com/mjaskowska/shop",
         description:
-          "Ecommerce shop website created as a showcase of my React skills improvement. I've used React functional components along with Hooks: useState, useEffect, useContext, as well as fetched fake API to access items and perfom some tasks and modifications on them. Items can be added to the basket, which state is saved to the local storage. I've implemented Firebase Authentication to create user profile (register, login, change details, reset password) and React Router to navigate within the app.",
+          "eCommerce shop website created as a showcase of my React skills improvement. I've used React functional components along with Hooks: useState, useEffect, useContext, as well as fetched fake API to access items and perfom some tasks and modifications on them. Items can be added to the basket, which state is saved to the local storage. I've implemented Firebase Authentication to create user profile (register, login, change details, reset password) and React Router to navigate within the app.",
         tech: ["React", "React Router", "Frebase Auth", "SCSS",],
       },  
   ]
