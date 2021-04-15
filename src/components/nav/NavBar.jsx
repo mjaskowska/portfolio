@@ -13,6 +13,8 @@ import CV from './../../assets/MJaskowska - CV.pdf'
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowScrolled, setWindowScrolled] = useState(false);
+  const navItems = useRef(null)
+  const cvRef = useRef(null)
 
 
   useEffect(() => {
@@ -34,16 +36,17 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // useEffect(()=>{
-  //   const [items] = navItems.current.children;
+  useEffect(()=>{
+    const items = navItems.current.children;
+    const cv = cvRef.current;
 
-  //   gsap.set(items, {autoAlpha: 0})
+    gsap.set([items, cv], {autoAlpha: 0})
 
-  //   const tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
+    const tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
 
-  //   tl.fromTo(items, {y: "-+10"}, {duration: 0.5, autoAlpha: 1, y: "+=10"})
+    tl.fromTo([items, cv], {y: "-=20"}, {duration: 0.7, autoAlpha: 1, y: "0", stagger: 0.15})    
 
-  // },[])
+  },[])
 
   return (
     <>
@@ -66,7 +69,7 @@ const NavBar = () => {
           )}
         </button>
         <section className="menu">
-          <div className="menu-links">
+          <div className="menu-links" ref={navItems}>
             <AnchorLink offset={() => 100}  href="#01" className="menu-link">
               <span>01. </span>About
             </AnchorLink>
@@ -80,7 +83,7 @@ const NavBar = () => {
               <span>04. </span>Contact
             </AnchorLink>
           </div>
-          <a className="cv-btn" href={CV} target="blank">
+          <a className="cv-btn" href={CV} target="blank" ref={cvRef}>
             CV
           </a>
         </section>

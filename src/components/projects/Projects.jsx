@@ -1,11 +1,39 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import { FaFile, FaFileCode } from "react-icons/fa";
 
 import { experience, personalProjects } from "./info";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const Projects = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const component = componentRef.current.children;
+
+    gsap.set([component], { autoAlpha: 0 });
+    const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+    tl.fromTo(
+      [component],
+      { y: "0" },
+      {
+        autoAlpha: 1,
+        y: "0",
+        scrollTrigger: {
+          trigger: component,
+          start: "top 95%",
+          end: "top 20%",
+          scrub: 1,
+        },
+      }
+    );
+  }, []);
+
+
   return (
-    <div className="projects" id="03">
+    <div className="projects" id="03" ref={componentRef}>
       <h3 className="subtitle">
         <span>03.</span> Experience & Projects
       </h3>

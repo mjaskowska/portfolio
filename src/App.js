@@ -1,4 +1,3 @@
-import './styles/_index.scss'
 
 import NavBar from './components/nav/NavBar'
 import Sidebar from './components/sidebar/Sidebar'
@@ -10,9 +9,12 @@ import Contact from "./components/contact/Contact"
 import Footer from './components/footer/Footer'
 import BackToTop from './components/sidebar/BackToTop'
 
+import './styles/_index.scss'
+
 function App() {
+
   return (
-    <div className="App">
+    <div className="App" >
      <NavBar />
      <Sidebar />
      <Hero />

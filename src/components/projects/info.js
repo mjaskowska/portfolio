@@ -1,4 +1,3 @@
-
 import saro from './../../assets/saro.png'
 import cocktails from './../../assets/cocktails.png'
 import locks from './../../assets/css-locks.png'
@@ -31,8 +30,7 @@ export const experience = [
         description:
           "If a value (font-size) is determined by viewport units, it might result in a value that is too big or too small at times. To avoid this happening, the best solution would be to lock them in media queries, using calc() function which still requires from us some math. This tool has been created to generate those functions automatically, ready to copy straight into your CSS code. What a time saver! P.S. I'll be honest - I use it all the time and hope you'll love it too!",
         tech: ["React", "SCSS", "GSAP"],
-      },
-      
+      },      
       {
         projectTitle: "COCKTAILS",
         imgURL: cocktails,
