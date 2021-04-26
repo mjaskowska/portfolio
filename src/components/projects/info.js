@@ -3,6 +3,7 @@ import cocktails from './../../assets/cocktails.png'
 import locks from './../../assets/css-locks.png'
 import sandar from './../../assets/sandar.png'
 import shop from './../../assets/shop.png'
+import v1 from './../../assets/v1.png'
 
 export const experience = [
     {
@@ -22,6 +23,15 @@ export const experience = [
   ];
 
   export const personalProjects = [  
+    {
+      projectTitle: "PORTFOLIO v1",
+      imgURL: v1,
+      demoURL: "https://mjaskowska.github.io/portfolio-v1/",
+      githubURL: "https://github.com/mjaskowska/portfolio-v1",
+      description:
+        "This project is the very first version of my portfolio. I've decided to include it here as it's a perfect showcase of my progress.",
+      tech: ["JavaScript", "SCSS"],
+    }, 
       {
         projectTitle: "CSS LOCKS GENERATOR",
         imgURL: locks,
