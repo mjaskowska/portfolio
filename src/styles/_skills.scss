@@ -8,7 +8,7 @@
         display: block;
         margin: 100px auto;
     }
-    .skill-list{
+    .skill-list, .learning-skill-list{
         max-width: 1300px;
         width: 80%;
         margin: 0 auto;
@@ -36,10 +36,14 @@
             }
         }
     }
+    .learning-skill-list {
+        justify-content: flex-start;
+        
+    }
 }
 @media (min-width: 600px) {
     .skills {
-        p, .skill-list {
+        p, .skill-list, .learning-skill-list {
             width: 70%;
         }
     }

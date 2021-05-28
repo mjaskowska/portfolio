@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import {skills, learningSkills} from "./info"
+
 const Skills = () => {
   gsap.registerPlugin(ScrollTrigger);
   const componentRef = useRef(null);
@@ -36,19 +38,13 @@ const Skills = () => {
         projects:
       </p>
       <ul className="skill-list">
-        <li className="skill">HTML</li>
-        <li className="skill">CSS</li>
-        <li className="skill">SASS</li>
-        <li className="skill">JavaScript</li>
-        <li className="skill">React</li>
-        <li className="skill">Redux</li>
-        <li className="skill">React Bootstrap</li>
-        <li className="skill">Formik</li>
-        <li className="skill">Webpack</li>
-        <li className="skill">GSAP</li>
-        <li className="skill">Git/ Github</li>
-        <li className="skill">Figma</li>
-        <li className="skill">Adobe Photoshop</li>
+       {skills.map(skill=><li className="skill">{skill}</li>)}
+      </ul>
+      <p>
+        Currently learning:
+      </p>
+      <ul className="learning-skill-list">
+        {learningSkills.map(skill=><li className="skill">{skill}</li>)}
       </ul>
     </div>
   );
