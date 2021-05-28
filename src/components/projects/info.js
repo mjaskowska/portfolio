@@ -17,7 +17,7 @@ export const experience = [
       githubURL: "https://github.com/michalskirobert/saro-react",
       description:
         "My main areas of contribution are so far: Admin Panel / CMS and implementing new and improved layouts. I've learned how to work within a team in a big project (Git/GitHub), implement many React libraries, Redux, Firebase (Auth, Firestore), validate with Formik, use constants, object destructuring and atomic design principles.",
-      tech: ["React", "Hooks", "SCSS", "Styled-Components", "React-Bootstrap", "Redux", "Firebase(Auth, Firestore)", "Formik"],
+      tech: ["React", "Hooks", "TypeScript", "SCSS", "Styled-Components", "Reactstrap", "Redux", "Firebase(Auth, Firestore)", "Formik"],
     }, 
 
   ];
