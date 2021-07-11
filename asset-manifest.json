@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5cc34de5.chunk.css",
-    "main.js": "/portfolio/static/js/main.5c81b459.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5c81b459.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.17e11813.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.17e11813.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.c32c88f3.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.c32c88f3.js.map",
     "static/js/2.fcb0a6fe.chunk.js": "/portfolio/static/js/2.fcb0a6fe.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/2.fcb0a6fe.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fcb0a6fe.chunk.js.LICENSE.txt",
     "static/media/Close.4b78b4e9.svg": "/portfolio/static/media/Close.4b78b4e9.svg",
     "static/media/Hamburger.a33b90b0.svg": "/portfolio/static/media/Hamburger.a33b90b0.svg",
-    "static/media/MJaskowska - CV.d55c0eca.pdf": "/portfolio/static/media/MJaskowska - CV.d55c0eca.pdf",
+    "static/media/MJaskowska - CV.04069fbf.pdf": "/portfolio/static/media/MJaskowska - CV.04069fbf.pdf",
     "static/media/cocktails.9f09b12e.png": "/portfolio/static/media/cocktails.9f09b12e.png",
     "static/media/css-locks.e2bf6bfa.png": "/portfolio/static/media/css-locks.e2bf6bfa.png",
     "static/media/magda.e8828b9d.png": "/portfolio/static/media/magda.e8828b9d.png",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.c32c88f3.js",
     "static/js/2.fcb0a6fe.chunk.js",
     "static/css/main.5cc34de5.chunk.css",
-    "static/js/main.5c81b459.chunk.js"
+    "static/js/main.17e11813.chunk.js"
   ]
 }
