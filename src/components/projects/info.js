@@ -19,7 +19,6 @@ export const experience = [
         "My main areas of contribution are so far: Admin Panel / CMS and implementing new and improved layouts. I've learned how to work in a team in a medium-sized project (Git/GitHub), implement many React libraries (e.g. ReactGrid, ReactTostify), Redux, Firebase (Auth, Firestore), validate with Formik, use constants, object destructuring and atomic design principles.",
       tech: ["React", "Hooks", "TypeScript", "SCSS", "Styled-Components", "Reactstrap", "Redux", "Firebase(Auth, Firestore)", "Formik"],
     }, 
-
   ];
 
   export const personalProjects = [  

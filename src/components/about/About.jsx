@@ -69,12 +69,6 @@ const About = () => {
             mix of problem solving and getting to be creative.{" "}
             <span>I am committed, persistent and ready to learn</span>.{" "}
           </p>
-
-          <p>
-            I am currently seeking a Junior Web Developer position where I will
-            be able to work alongside other talented IT professionals in
-            creating websites meeting the very highest standards.
-          </p>
         </div>
       </div>
     </div>
